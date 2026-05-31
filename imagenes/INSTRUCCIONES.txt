@@ -1,0 +1,13 @@
+Coloca aquí tus imágenes con exactamente estos nombres:
+
+  darksouls-hero.jpg    → imagen principal del hero/banner
+  ashen-one.jpg         → personaje Ashen One
+  fire-keeper.jpg       → personaje Fire Keeper
+  ludleth.jpg           → personaje Ludleth of Courland
+  soul-of-cinder.jpg    → personaje Soul of Cinder
+  galeria-1.jpg         → imagen de galería 1
+  galeria-2.jpg         → imagen de galería 2
+  galeria-3.jpg         → imagen de galería 3
+
+Si quieres usar nombres distintos, actualiza los atributos src
+correspondientes en index.html.

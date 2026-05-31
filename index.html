@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Souls 3 - Inicio</title>
+    <!-- Crimson Text como fuente de respaldo (se usa si FOT-Matisse Pro EB no está instalada) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ===== HEADER (compartido en todas las páginas) ===== -->
+    <header class="header">
+        <div class="header-inner">
+            <!-- El logo lleva siempre al inicio -->
+            <a href="index.html" class="logo">Dark Souls 3</a>
+            <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav-lista">
+                    <li><a href="index.html"       class="nav-link nav-link--activo">Inicio</a></li>
+                    <li><a href="historia.html"    class="nav-link">Historia</a></li>
+                    <li class="nav-item nav-item--dropdown">
+                        <button type="button" class="nav-link nav-dropdown-toggle" aria-expanded="false">Localidades</button>
+                        <ul class="nav-submenu" aria-label="Localidades de Dark Souls 3">
+                            <li><span class="nav-subtitle">Juego Base</span></li>
+                            <li><span class="nav-sublink">Cementerio de Ceniza</span></li>
+                            <li><span class="nav-sublink">Santuario de Enlace</span></li>
+                            <li><span class="nav-sublink">Gran Muro de Lothric</span></li>
+                            <li><span class="nav-sublink">Asentamiento de No Muertos</span></li>
+                            <li><span class="nav-sublink">Camino de los Sacrificios</span></li>
+                            <li><span class="nav-sublink">Catedral de la Oscuridad</span></li>
+                            <li><span class="nav-sublink">Torreon de Farron</span></li>
+                            <li><span class="nav-sublink">Catacumbas de Carthus</span></li>
+                            <li><span class="nav-sublink">Lago Ardiente (Opcional)</span></li>
+                            <li><span class="nav-sublink">Irithyll del Valle Boreal</span></li>
+                            <li><span class="nav-sublink">Anor Londo</span></li>
+                            <li><span class="nav-sublink">Mazmorra de Irithyll</span></li>
+                            <li><span class="nav-sublink">Capital Profanada</span></li>
+                            <li><span class="nav-sublink">Jardin del Rey Consumido (Opcional)</span></li>
+                            <li><span class="nav-sublink">Tumbas Desatendidas (Opcional)</span></li>
+                            <li><span class="nav-sublink">Castillo de Lothric</span></li>
+                            <li><span class="nav-sublink">Archivos de los Grandes</span></li>
+                            <li><span class="nav-sublink">Horno de la Primera Llama</span></li>
+                            <li><span class="nav-subtitle">Contenido Descargable (DLCs)</span></li>
+                            <li><span class="nav-sublink">Cenizas de Ariandel: El Mundo Pintado de Ariandel</span></li>
+                            <li><span class="nav-sublink">La Ciudad Anillada: El Monton de Escoria y La Ciudad Anillada</span></li>
+                        </ul>
+                    </li>
+                    <li><a href="personajes.html"  class="nav-link">Personajes</a></li>
+                    <li><a href="galeria.html"     class="nav-link">Galería</a></li>
+                    <li><button type="button" class="nav-link nav-contact-trigger" aria-haspopup="dialog" aria-controls="contacto-modal" aria-expanded="false">Contacto</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== MAIN ===== -->
+    <main>
+
+        <!-- ================================================
+             SECCIÓN: HERO
+             Cambia "darksouls-hero2.jpg" por tu imagen real
+             ================================================ -->
+        <section class="seccion-inicio">
+            <div class="hero">
+                <img
+                    src="imagenes/darksouls-hero2.jpg"
+                    alt="Dark Souls 3 - Portada"
+                    class="hero-img"
+                >
+                <div class="hero-overlay">
+                    <h2 class="hero-titulo">La hoguera se extingue.</h2>
+                    <p class="hero-subtitulo">Revive la leyenda del Elegido de la Ceniza.</p>
+
+                    <!-- Info del juego -->
+                    <div class="hero-info">
+                        <div class="hero-meta">
+                            <span class="meta-label">Fecha de lanzamiento:</span>
+                            <span class="meta-valor">12/04/2016</span>
+                            <span class="meta-separador">|</span>
+                            <span class="meta-label">Géneros:</span>
+                            <span class="meta-valor">Rol</span>
+                            <span class="meta-separador">|</span>
+                            <span class="meta-label">Desarrollador:</span>
+                            <span class="meta-valor">FromSoftware, Inc</span>
+                        </div>
+                        <div class="hero-plataformas">
+                            <span class="plataforma">PS4</span>
+                            <span class="plataforma">PC</span>
+                            <span class="plataforma plataforma--xbox">
+                                <!-- Ícono Xbox simplificado en SVG inline -->
+                                <svg class="xbox-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M5 7.5C6.8 5.5 9 4.5 12 4.5c0 0-2.5 2-4.5 5.5S5.5 17 5.5 17C3.8 15 3 13 3 12c0-1.7.7-3.3 2-4.5z" fill="currentColor"/>
+                                    <path d="M19 7.5C17.2 5.5 15 4.5 12 4.5c0 0 2.5 2 4.5 5.5S18.5 17 18.5 17C20.2 15 21 13 21 12c0-1.7-.7-3.3-2-4.5z" fill="currentColor"/>
+                                    <path d="M12 6.5C10.5 8 8.5 11 8.5 12s.8 3.5 3.5 6c2.7-2.5 3.5-5 3.5-6s-2-4-3.5-5.5z" fill="currentColor"/>
+                                </svg>
+                                XBOX ONE
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <article class="hero-score-badge hero-score-badge--top-left">
+                    <span class="hero-score-company">Metacritic</span>
+                    <span class="hero-score-value">89 / 100</span>
+                </article>
+                <article class="hero-score-badge hero-score-badge--top-right">
+                    <span class="hero-score-company">IGN</span>
+                    <span class="hero-score-value">9.5 / 10</span>
+                </article>
+                <article class="hero-score-badge hero-score-badge--bottom-left">
+                    <span class="hero-score-company">GameSpot</span>
+                    <span class="hero-score-value">8 / 10</span>
+                </article>
+                <article class="hero-score-badge hero-score-badge--bottom-center">
+                    <span class="hero-score-company">PC Gamer</span>
+                    <span class="hero-score-value">94 / 100</span>
+                </article>
+                <article class="hero-score-badge hero-score-badge--bottom-right">
+                    <span class="hero-score-company">Eurogamer</span>
+                    <span class="hero-score-value">Recommended</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- ================================================
+             SECCIÓN: DESCRIPCIÓN DEL JUEGO
+             Modifica los textos si lo necesitas
+             ================================================ -->
+        <section class="seccion seccion-descripcion">
+            <div class="contenedor">
+                <div class="descripcion-layout">
+
+                    <!-- Portada izquierda: Ashes of Ariandel — cambia el src por tu imagen -->
+                    <div class="descripcion-portada-wrap">
+                        <img
+                            src="imagenes/ashes-of-ariandel2.jpg"
+                            alt="DLC Ashes of Ariandel"
+                            class="descripcion-portada"
+                        >
+                    </div>
+
+                    <!-- Texto central -->
+                    <div class="descripcion-contenido">
+                        <p>
+                            <strong>Dark Souls III</strong> es un videojuego de rol de acción desarrollado por
+                            <strong>FromSoftware</strong> y publicado por <strong>Bandai Namco Entertainment</strong>
+                            para PlayStation 4, Xbox One y Microsoft Windows. Es la tercera y última entrega en la
+                            saga Souls, lanzándose en Japón el 24 de marzo de 2016, y de manera mundial en abril
+                            del mismo año.
+                        </p>
+                        <p>
+                            Dark Souls III fue un éxito tanto de crítica como de ventas, con la crítica nombrando
+                            a este como un digno y adecuado final para la saga. Fue el juego de Bandai Namco que
+                            más rápido vendió en su historia, alcanzando más de <strong>tres millones de copias</strong>
+                            en todo el mundo en menos de dos meses tras su lanzamiento y más de
+                            <strong>10 millones en 2020</strong>.
+                        </p>
+                        <p>
+                            En total, el juego ha recibido <strong>2 expansiones de pago (DLC)</strong>:
+                            <em>Ashes of Ariandel</em>, lanzado el 24 de octubre de 2016, y
+                            <em>The Ringed City</em>, estrenado el 28 de marzo de 2017. Con el lanzamiento de esta
+                            última expansión, se preparó una edición especial GOTY que reunió el juego base y ambos
+                            DLC bajo el nombre de <strong>Dark Souls III: The Fire Fades Edition</strong>,
+                            disponible en abril de 2017.
+                        </p>
+                    </div>
+
+                    <!-- Portada derecha: The Ringed City — cambia el src por tu imagen -->
+                    <div class="descripcion-portada-wrap">
+                        <img
+                            src="imagenes/the-ringed-city2.jpg"
+                            alt="DLC The Ringed City"
+                            class="descripcion-portada"
+                        >
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion seccion-soulslike" aria-labelledby="soulslike-title">
+            <div class="contenedor">
+                <h2 id="soulslike-title" class="titulo-seccion">SoulsLike</h2>
+                <p class="soulslike-intro">Descubre otros títulos emblemáticos del género SoulsLike y su estilo oscuro, desafiante y memorable.</p>
+                <div class="soulslike-galeria">
+                    <a href="imagenes/demons-souls-portada.jpg" class="soulslike-item glightbox" data-gallery="soulslike" data-title="Demon's Souls" data-description="El precursor espiritual que definió las bases del género.">
+                        <img src="imagenes/demons-souls-portada.jpg" alt="Demon's Souls">
+                        <span class="soulslike-caption">Demon's Souls</span>
+                    </a>
+                    <a href="imagenes/Dark_Souls_Portada.webp" class="soulslike-item glightbox" data-gallery="soulslike" data-title="Dark Souls" data-description="El inicio de la saga Souls en su formato moderno.">
+                        <img src="imagenes/Dark_Souls_Portada.webp" alt="Dark Souls">
+                        <span class="soulslike-caption">Dark Souls</span>
+                    </a>
+                    <a href="imagenes/Dark_Souls_II_Portada.webp" class="soulslike-item glightbox" data-gallery="soulslike" data-title="Dark Souls II" data-description="La secuela que expandió la escala del mundo y sus builds.">
+                        <img src="imagenes/Dark_Souls_II_Portada.webp" alt="Dark Souls II">
+                        <span class="soulslike-caption">Dark Souls II</span>
+                    </a>
+                    <a href="imagenes/Bloodborne-portada.avif" class="soulslike-item glightbox" data-gallery="soulslike" data-title="Bloodborne" data-description="Acción agresiva y horror cósmico con identidad propia.">
+                        <img src="imagenes/Bloodborne-portada.avif" alt="Bloodborne">
+                        <span class="soulslike-caption">Bloodborne</span>
+                    </a>
+                    <a href="imagenes/sekiro-portada.webp" class="soulslike-item glightbox" data-gallery="soulslike" data-title="Sekiro: Shadows Die Twice" data-description="Combate técnico, parry preciso y una ambientación samurái oscura.">
+                        <img src="imagenes/sekiro-portada.webp" alt="Sekiro Shadows Die Twice">
+                        <span class="soulslike-caption">Sekiro</span>
+                    </a>
+                    <a href="imagenes/elden-ring-portada.jpg" class="soulslike-item glightbox" data-gallery="soulslike" data-title="Elden Ring" data-description="Mundo abierto con exploración libre y jefes monumentales.">
+                        <img src="imagenes/elden-ring-portada.jpg" alt="Elden Ring">
+                        <span class="soulslike-caption">Elden Ring</span>
+                    </a>
+                    <a href="imagenes/lies-of-p-portada-2.jpg" class="soulslike-item glightbox" data-gallery="soulslike" data-title="Lies of P" data-description="Reinterpretación oscura de Pinocho con combate de alto riesgo.">
+                        <img src="imagenes/lies-of-p-portada-2.jpg" alt="Lies of P">
+                        <span class="soulslike-caption">Lies of P</span>
+                    </a>
+                    <a href="imagenes/lotf-portada-2.jpg" class="soulslike-item glightbox" data-gallery="soulslike" data-title="Lords of the Fallen" data-description="Dualidad entre planos y progresión centrada en builds.">
+                        <img src="imagenes/lotf-portada-2.jpg" alt="Lords of the Fallen">
+                        <span class="soulslike-caption">Lords of the Fallen</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <p class="footer-fanmade">Página fan-made sobre Dark Souls 3</p>
+        <div class="footer-legal-wrap">
+            <div class="footer-ratings" aria-label="Clasificaciones de edad del juego">
+                <span class="rating-badge rating-badge--pegi" aria-label="Clasificación PEGI 16">
+                    <small>PEGI</small>
+                    <strong>16</strong>
+                </span>
+                <span class="rating-badge rating-badge--adults" aria-label="Clasificación mayores de 18 años">18+</span>
+                <span class="rating-badge rating-badge--usk" aria-label="Clasificación USK 16">
+                    <small>USK</small>
+                    <strong>16</strong>
+                </span>
+            </div>
+            <p class="footer-aviso">Dark Souls III &amp; ©BANDAI NAMCO Entertainment Inc. / ©2011-2016 FromSoftware, Inc. All other trademarks are properties of their respective owners.</p>
+        </div>
+    </footer>
+
+    <div id="contacto-modal" class="contacto-modal" aria-hidden="true">
+        <div class="contacto-modal-backdrop" data-contact-close></div>
+        <div class="contacto-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="contacto-modal-title">
+            <button type="button" class="contacto-modal-close" data-contact-close aria-label="Cerrar formulario de contacto">×</button>
+            <div class="contacto-panel">
+                <div class="contacto-copy">
+                    <p class="contacto-eyebrow">Contacto</p>
+                    <h3 id="contacto-modal-title">Envía tu mensaje al Santuario</h3>
+                    <p>Usa este formulario para consultas, sugerencias o comentarios sobre la fan page de Dark Souls 3.</p>
+                </div>
+                <form class="contacto-form" action="#" method="post">
+                    <div class="contacto-grid">
+                        <div class="contacto-field">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="contacto-field">
+                            <label for="correo">Correo</label>
+                            <input type="email" id="correo" name="correo" placeholder="tuemail@ejemplo.com" required>
+                        </div>
+                        <div class="contacto-field contacto-field-full">
+                            <label for="asunto">Asunto</label>
+                            <input type="text" id="asunto" name="asunto" placeholder="Motivo del mensaje" required>
+                        </div>
+                        <div class="contacto-field contacto-field-full">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe tu mensaje" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="contacto-submit">Enviar mensaje</button>
+                    <div class="contacto-status" role="status" aria-live="polite" aria-atomic="true"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
